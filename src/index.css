@@ -1,1 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@300&display=swap');
 /* ======================== General and Root Styling =======================*/
+*{
+  padding:0px;
+  margin: 0px;
+  user-select: none;
+  user-zoom: none;
+  text-decoration: none;
+  color: var(--litColor);
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --litColor: #FFFFFF;
+  --blkColor:#000000;
+}
+html,body{
+  min-height: 100%;
+}
+body{
+  background-color: var(--blkColor);
+}
+/* ======================== Header Styling =======================*/
+header{
+  /* background-color: rgba(0,0,0,0.5); */
+}
+/* ======================== Main Styling =======================*/
+main{
+  background-image: url('../src/assets/images/hero01.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+/* ======================== Hero Styling =======================*/
+
+.hero-content h1{
+  font-family: 'Noto Serif Tamil', serif;
+  font-size: 4em;
+}
+@media (max-width:991px) {
+  .hero-content h1{
+  font-size: 2.7em;
+}
+}
+@media (max-width:924px) {
+  .hero-content h1{
+  font-size: 2.7em;
+}
+}
+@media (max-width:767px) {
+    .hero-content h1{
+  font-size: 2em;
+}
+.hero-content{
+ padding: 20px;
+}
+}
+@media (max-width:480px) {
+  .lg-txt{
+    display: none;
+  }
+}
